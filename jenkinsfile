@@ -6,7 +6,7 @@ pipeline{
     stage{
         stage('Deploy to remote server'){
             steps{
-                sh "scp -r ${WORKSPACE}/* root@${serverip}:/var/www/html/projectX"
+                sh "scp -r ${WORKSPACE}/* root@${serverip}:/var/www/html/project101"
             }
         }
     }
