@@ -3,7 +3,7 @@ pipeline{
     environment{
         serverip="13.38.98.90"
     }
-    stage{
+    stages{
         stage('Deploy to remote server'){
             steps{
                 sh "scp -r ${WORKSPACE}/* root@${serverip}:/var/www/html/project101"
