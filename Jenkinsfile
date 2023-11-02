@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('Deploy to remote server'){
             steps{
-                sh -o StrictHostKeyChecking=no "scp -r ${WORKSPACE}/* sean@${serverip}:/var/www/html/project102"
+                sh  "scp -o StrictHostKeyChecking=no -r ${WORKSPACE}/* sean@${serverip}:/var/www/html/project102"
             }
         }
     }
