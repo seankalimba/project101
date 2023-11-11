@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment{
-        serverip="13.36.208.55"
+        serverip="35.180.83.129"
     }
     stages{
         stage('Deploy to remote server'){
